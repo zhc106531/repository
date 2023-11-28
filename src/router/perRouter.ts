@@ -19,4 +19,10 @@ export const perRoutes: Array<RouteRecordRaw> = [
     component: () => import('@/views/Tools/index.vue'),
     children: [],
   },
+  {
+    name: 'xx',
+    path: '/xx',
+    component: () => import('@/views/Xx/index.vue'),
+    children: [],
+  },
 ];
