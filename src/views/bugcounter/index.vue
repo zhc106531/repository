@@ -1,8 +1,48 @@
 <template>
-  <div>bug统计</div>
-  
+  <div class="jbxx">
+    <el-form class="demo-form-inline">
+      <el-input placeholder="jira账号" />
+      <el-input placeholder="密码" />
+      <el-button class="elbutton" type="primary" round @click="buglogin">login</el-button>
+    </el-form>
+  </div>
+  <div class="output"></div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import router from '@/router';
 
-<style scoped></style>
+const buglogin = () =>{
+  router.push('buglogin')
+}
+</script>
+
+<style scoped lang="scss">
+.jbxx {
+  height: 400px;
+  width: 1400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* 垂直居中 */
+  margin: 0 auto; /* 水平居中 */
+}
+
+.output {
+  width: 1400px;
+  height: 450px;
+}
+
+.demo-form-inline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px; /* 添加间距，以提高可读性 */
+  width: 300px;
+  height: 200px; /* 减小表单高度，以便适应容器高度 */
+}
+.elbutton{
+  width: 300px;
+}
+
+</style>
