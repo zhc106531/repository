@@ -3,7 +3,7 @@
     <el-form class="demo-form-inline">
       <div class="contenttop">
         <!-- <el-input class="elinput" placeholder="请输入要注册的个数" /> -->
-        <el-input-number class="elinput" v-model="registerNum" :min="1" :max="10" controls-position="right" />
+        <el-input-number class="elinput" v-model="registerNum" :min="1" :max="100" controls-position="right" />
         <el-button class="elbutton" type="primary" @click="register">注册</el-button>
       </div>
       <div class="contentbutton">
